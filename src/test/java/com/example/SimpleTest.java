@@ -24,7 +24,7 @@ public class SimpleTest {
 
     @Test
     public void queryDslSample01() {
-        logger.info("********");
+        logger.info("******** START ********");
         SQLQuery query = qdslTemplate.newSqlQuery();
         QMytable qMytable = QMytable.mytable;
         query.from(qMytable).where(qMytable.id.eq(Long.parseLong("1")));
